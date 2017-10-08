@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome | Quotabit</title>
+</head>
+<body>
+<% include partials/agentnavbar %>
+<div class="container-fluid" id="createplancnt">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <div class="container">
+            <div class="left-panel">
+                <div class="col-xs-12 col-sm-12 col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="col-md-12">
+                                <div class="icerik-bilgi">
+                                    <p class="text-center" style="color: #bc0cc9;"><em>Before you do</em></p>
+                                    <div class="row">
+                                        <form role="form" id="contact-form" class="contact-form" method="POST" action="/agent/welcome">
+                                            <div class="row">
+                                                <div class="col-md-3 col-md-offset-1">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" name="agencyname" autocomplete="off" placeholder="Agency Name">
+                                                      </div>
+                                                </div>
+                                                <div class="col-md-3 col-md-offset-1">
+                                                      <div class="form-group">
+                                                        <select name="agenttype" class="form-control">
+                                                            <option>Captive Or Independent</option>
+                                                            <option disabled>------------------</option>
+                                                            <option value="captive">Captive</option>
+                                                            <option value="independent">Independent</option>
+                                                        </select>
+                                                      </div>
+                                                </div>
+                                                <div class="col-md-2 col-md-offset-1">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" name="phonenumber" placeholder="Phone Number" autocomplete="off" />
+                                                      </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 col-md-offset-1">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" name="liscensenumber" placeholder="Agent Liscense" autocomplete="off" />
+                                                      </div> 
+                                                </div>
+                                                <div class="col-md-3 col-md-offset-1">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" name="address" placeholder="Address" autocomplete="off" />
+                                                    </div> 
+                                                </div>
+                                                <div class="col-md-2 col-md-offset-1">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" name="yearsinbusiness" placeholder="Years In Business" autocomplete="off" />
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 col-md-offset-1">
+                                                    <div class="form-group">
+                                                        <select name="state" id="agentstate" class="form-control">
+                                                            <option>State</option>
+                                                            <option disabled>-----------------------</option>
+                                                            <option value="AL">AL</option>
+                                                            <option value="AK">AK</option>
+                                                            <option value="AZ">AZ</option>
+                                                            <option value="AR">AR</option>
+                                                            <option value="CA">CA</option>
+                                                            <option value="CO">CO</option>
+                                                            <option value="CT">CT</option>
+                                                            <option value="DE">DE</option>
+                                                            <option value="FL">FL</option>
+                                                            <option value="GA">GA</option>
+                                                            <option value="HI">HI</option>
+                                                            <option value="ID">ID</option>
+                                                            <option value="IL">IL</option>
+                                                            <option value="IN">IN</option>
+                                                            <option value="IA">IA</option>
+                                                            <option value="KS">KS</option>
+                                                            <option value="KY">KY</option>
+                                                            <option value="LE">LE</option>
+                                                            <option value="ME">ME</option>
+                                                            <option value="MD">MD</option>
+                                                            <option value="MA">MA</option>
+                                                            <option value="MI">MI</option>
+                                                            <option value="MN">MN</option>
+                                                            <option value="MS">MS</option>
+                                                            <option value="MO">MO</option>
+                                                            <option value="MT">MT</option>
+                                                            <option value="NE">NE</option>
+                                                            <option value="NV">NV</option>
+                                                            <option value="NH">NH</option>
+                                                            <option value="NJ">NJ</option>
+                                                            <option value="NM">NM</option>
+                                                            <option value="NY">NY</option>
+                                                            <option value="NC">NC</option>
+                                                            <option value="ND">ND</option>
+                                                            <option value="OH">OH</option>
+                                                            <option value="OK">OK</option>
+                                                            <option value="OR">OR</option>
+                                                            <option value="PA">PA</option>
+                                                            <option value="RI">RI</option>
+                                                            <option value="SC">SC</option>
+                                                            <option value="SD">SD</option>
+                                                            <option value="TN">TN</option>
+                                                            <option value="TX">TX</option>
+                                                            <option value="UT">UT</option>
+                                                            <option value="VA">VA</option>
+                                                            <option value="VN">VN</option>
+                                                            <option value="WA">WA</option>
+                                                            <option value="WV">WV</option>
+                                                            <option value="WI">WI</option>
+                                                            <option value="WY">WY</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-md-offset-1">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" name="city" placeholder="City">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-md-offset-1">
+                                                    <button type="submit" class="btn main-btn form-control pull-right">Done</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+<style>
+#createplancnt{
+    padding-top: 110px;
+}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body{font-family: 'Open Sans', sans-serif;}
+
+a, p, h2{text-decoration:none;}
+
+/* PANEL */
+.left-panel .panel-default{border-bottom-left-radius:7px; border-bottom-right-radius:7px; border-bottom:2px #DDD solid;}
+.left-panel .panel-default .panel-body {padding:0; margin:0;}
+.left-panel .panel-default .panel-body .col-md-12{margin:0; padding:0;}
+.left-panel .panel-default .panel-body .thumbnail{border:none; margin:0; padding:0; position:relative;}
+.left-panel .panel-default .panel-body .icerik-bilgi{margin:30px;}
+.icerik-bilgi .btn-primary{float:right; margin-bottom:30px;}
+.icerik-bilgi h2{margin-bottom:30px; color:#333;}
+.icerik-bilgi h2:hover{color:#E74C3C; text-decoration:none;}
+.icerik-bilgi a:hover{text-decoration:none;}
+.icerik-bilgi p{margin-bottom:30px; line-height:25px; font-size:16px;}
+.contact-form{ margin-top:15px;}
+.contact-form .textarea{ min-height:220px; resize:none;}
+.form-control{ box-shadow:none; border-color: #bc0cc9;; height:49px;}
+.form-control:focus{ box-shadow:none; border-color: #bc0cc9;;}
+.form-control-feedback{ line-height:50px;}
+.main-btn{ background:#bc0cc9; border-color: #bc0cc9; color:white;}
+.main-btn:hover{ background:#bc0cc9;;color: white;}
+.form-control-feedback {
+line-height: 50px;
+top: 0px;
+}
+</style>
+</body>
+</html>

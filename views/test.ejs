@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test | Quotabit</title>
+</head>
+<body>
+<% include partials/navbar %>
+<div class="container" id="testcnt">
+    <div class="left-panel">
+        <% docs.forEach(function(data){ %>
+            <div class="col-xs-12 col-sm-6 col-lg-8">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="col-md-12">
+                                <div class="icerik-bilgi">
+                                    <a href="#"><h2><%= data.title %></h2></a>
+                                    <p><%= data.summary %></p>
+                                    <p><%= data.first_name %> <%= data.last_name %></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <% }); %>
+    </div>
+</div>
+<style>
+#testcnt{
+    padding-top: 70px;
+}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body{font-family: 'Open Sans', sans-serif;}
+
+a, p, h2{text-decoration:none;}
+
+/* PANEL */
+.left-panel .panel-default{border-bottom-left-radius:7px; border-bottom-right-radius:7px; border-bottom:2px #DDD solid;}
+.left-panel .panel-default .panel-body {padding:0; margin:0;}
+.left-panel .panel-default .panel-body .col-md-12{margin:0; padding:0;}
+.left-panel .panel-default .panel-body .thumbnail{border:none; margin:0; padding:0; position:relative;}
+.left-panel .panel-default .panel-body .icerik-bilgi{margin:30px;}
+.icerik-bilgi .btn-primary{float:right; margin-bottom:30px;}
+.icerik-bilgi h2{margin-bottom:30px; color:#333;}
+.icerik-bilgi h2:hover{color:#E74C3C; text-decoration:none;}
+.icerik-bilgi a:hover{text-decoration:none;}
+.icerik-bilgi p{margin-bottom:30px; line-height:25px; font-size:16px;}
+</style>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Account Settings | Quotabit</title>
+</head>
+<body>
+<% include partials/navbar %>
+<div class="container" id="myaccoutnsettingscnt">
+        <section>
+                <div class="col-centered col-lg-12">
+                  <div class="pricing-tables attached ">
+                    <div class="row ">
+                      <div class="col-sm-3 col-md-3 col-lg-3">
+                        <div class="plan  first">
+                          <div class="head">
+                            <h2>Beginner</h2>
+                          </div>
+                          <ul class="item-list">
+                            <li><strong>Buliding</strong> email leads</li>
+                            <li><strong>Quality</strong> leads</li>
+                            <li><strong>Not</strong> flexible</li>
+                          </ul>
+                          <div class="price mediafix">
+                            <h3><span class="symbol">$</span>19.99</h3>
+                            <h4>per month</h4>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="plan last">
+                          <div class="head value">
+                            <h2>Professional</h2>
+                          </div>
+                          <ul class="item-list">
+                            <li><strong>Phone</strong> leads</li>
+                            <li><strong>Ultra</strong> quality leads</li>
+                            <li><strong>Unlimited</strong> leads</li>
+                            <li><strong>Automatic</strong> daily reminders</li>
+                          </ul>
+                          <div class="price">
+                            <h3>
+                              <span class="symbol">$</span>149.99</h3>
+                            <h4>per month</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="plan last">
+                          <div class="head value">
+                            <h2>Amateur</h2>
+                          </div>
+                          <ul class="item-list">
+                            <li><strong>Phone</strong>leads</li>
+                            <li><strong>5000+</strong>leads</li>
+                            <li><strong>Super</strong> quality</li>
+                            <li><strong>Weekly</strong> reminders</li>
+                          </ul>
+                          <div class="price">
+                            <h3>
+                              <span class="symbol">$</span>69.99</h3>
+                            <h4>per month</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- pricing-tables -->
+                </div>
+                <br>
+        </section>
+</div>
+<style>
+#myaccoutnsettingscnt{
+    padding-top: 190px;
+}
+/* pricing table */
+.pricing-tables {
+  padding: 20px;
+}
+.pricing-tables h1 {
+  font-size: 48px;
+}
+.pricing-tables .plan.first {
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px !important;
+}
+.pricing-tables .plan.last {
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.pricing-tables .plan.recommended {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.pricing-tables .plan.recommended .head {
+  /*margin-bottom: 20px;*/
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.pricing-tables.attached .col-sm-4, .pricing-tables.attached .col-md-4, .pricing-tables.attached .col-sm-3, .pricing-tables.attached .col-md-3 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.pricing-tables.attached .plan {
+  border-radius: 0;
+}
+.pricing-tables.attached .plan .head {
+  border-radius: 0;
+}
+/*.pricing-tables.attached .plan.recommended {
+  border-radius: 4px;
+}*/
+/*.pricing-tables.attached .plan.recommended .head {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}*/
+.pricing-tables.attached .plan.last {
+  border-bottom-right-radius: 4px;
+}
+.pricing-tables.attached .plan.last .head {
+  border-top-right-radius: 4px;
+}
+.pricing-tables.attached .plan.first {
+  border-bottom-left-radius: 4px;
+}
+.pricing-tables.attached .plan.first .head {
+  border-top-left-radius: 4px;
+}
+.plan {
+  box-shadow: 0 2px 2px rgba(10, 10, 10, 0.30) !important;
+  min-height: 100px;
+  background: #fff;
+  border-radius: 4px;
+  margin: 20px 0;
+  padding-bottom: 25px;
+  text-align: center;
+}
+.plan .head {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding: 12px 16px;
+  background: #595959;
+  color: #fff;
+}
+.plan .head h1, .plan .head h2, .plan .head h3 {
+  padding: 0;
+  margin: 0;
+  font-weight: 100;
+}
+.plan .price {
+  border-top: 1px solid #eee;
+  margin: 0 auto 30px auto;
+  width: 80%;
+}
+.plan .price h3 {
+  font-size: 82px;
+  vertical-align: top;
+  line-height: 1;
+}
+.plan .price h3 span {
+  font-size: 38px;
+  vertical-align: top;
+  position: relative;
+  margin: 6px 0 0 -7px;
+  display: inline-block;
+}
+.plan .price h4 {
+  color: #aaa;
+  font-size: 14px;
+}
+.plan .btn {
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.plan ul {
+  list-style-type: none;
+  padding: 20px;
+  margin-top: 2px;
+}
+.plan ul li {
+  line-height: 22px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.plan ul li a {
+  text-decoration: underline;
+  color: #e6e9ed;
+}
+.plan ul li:last-child {
+  border-bottom: none;
+}
+.plan ul strong {
+  font-weight: 700;
+}
+.plan.recommended {
+  margin-top: 6px;
+  box-shadow: 0 0 22px rgba(10, 10, 10, 0.42);
+  position: relative;
+  z-index: 99;
+  border-radius: 4px;
+}
+.plan.recommended .head {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background: #4e9a06;
+}
+.head.value{
+  background-color: #fdaf17;
+  /*margin-bottom: 48px;*/
+}
+.plan.recommended .btn {
+  margin-bottom: 10px;
+}
+@media screen and (min-width:770px) and (max-width:990px){
+  .plan .mediafix h3 {
+      font-size: 55px !important;
+      vertical-align: top;
+      line-height: 1;
+  }
+}
+</style>
+</body>
+</html>

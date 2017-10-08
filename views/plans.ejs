@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Plans | Quotabit</title>
+</head>
+<body>
+<% include partials/navbar %>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.min.css">
+<div class="mainbody container-fluid" id="planscnt">
+    <div class="row">
+        <div class="col-lg-4 col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="media">
+                        <div class="media-body">
+                            <select name="insurancetypeselect" class="form-control" id="insurancetypeselect">
+                                <option class="form-control" value="auto">Auto</option>
+                                <option class="form-control" value="health">Health</option>
+                                <option class="form-control" value="life">Life</option>
+                                <option class="form-control" value="home">Home</option>
+                                <option class="form-control" value="annuity">Annuity</option>
+                                <option class="form-control" value="pet">Pet</option>
+                                <option class="form-control" value="disability">Disablity</option>
+                                <option class="form-control" value="travel">Travel</option>
+                                <option class="form-control" value="flood">Flood</option>
+                                <option class="form-control" value="liability">Liability</option>
+                                <option class="form-control" value="deposit">Deposit</option>
+                            </select>
+                            <hr>
+                            <input type="text" class="form-control text-center" value="User's Email" />
+                            <p>Some Questions Here</p>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8 col-md-9 col-sm-12 col-xs-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    Some result info here
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    #planscnt{
+        padding-top: 70px;
+    }
+</style>
+</body>
+</html>

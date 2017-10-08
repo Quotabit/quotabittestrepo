@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Plan Preview | Quotabit</title>
+</head>
+<body>
+<% include partials/agentnavbar %>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<div id="previewcnt" class="container">
+    <div class="left-panel">
+        <form role="form" id="contact-form" action="/agent/createplan/preview" method="POST" class="contact-form">
+        <div class="col-xs-5 col-sm-5 col-lg-5">
+    	    <div class="panel panel-default">
+    		    <div class="panel-body">
+    				<div class="col-md-12">
+    					<div class="thumbnail">
+    						<img src="https://www.trustedchoice.com/content/dam/trustedchoice/CarrierProfiles/nationwide-1200x1224.jpg" alt=""/>
+    					</div>
+    					<div class="icerik-bilgi">
+    						<input type="text" name="title" class="form-control" value="Nationwide Insurance  $30" />
+    						<br>
+    						<button data-toggle="collapse" href="#collapse1" class="btn btn-success">Advantages</button> &nbsp;
+    						<a><button class="btn btn-info">Call Agent</button></a> &nbsp; <a><button class="btn btn-info">Go To Website</button></a><p>
+                            <div id="collapse1" class="panel-collapse collapse">
+                                <br>
+                                <li class="list-group-item">One</li>
+                                <li class="list-group-item">Two</li>
+                                <li class="list-group-item">Three</li>
+                                <li class="list-group-item">Two</li>
+                                <li class="list-group-item">Three</li>
+                            </div>
+        				 </div>
+    				</div>
+    			</div>
+    		</div>
+        </div>
+        <div class="col-xs-5 col-sm-5 col-lg-5">
+    	    <div class="panel panel-default">
+    		    <div class="panel-body">
+    				<div class="col-md-12">
+    					<div class="icerik-bilgi">
+    					    <p>Choose lead types: Auto</p>
+                            <label for="birthdate" class="btn btn-info">Birthdate<input type="checkbox" id="birthdate" class="badgebox"><span class="badge">&check;</span></label>
+                            <label for="creditscore" class="btn btn-info">Credit Score<input type="checkbox" id="creditscore" class="badgebox"><span class="badge">&check;</span></label>
+    					    <label for="maritalstatus" class="btn btn-info">Marital Status<input type="checkbox" id="maritalstatus" class="badgebox"><span class="badge">&check;</span></label>
+    					    <label for="gender" class="btn btn-info">Gender<input type="checkbox" id="gender" class="badgebox"><span class="badge">&check;</span></label>
+    					    <label for="accident" class="btn btn-info">Accident<input type="checkbox" id="accident" class="badgebox"><span class="badge">&check;</span></label>
+    					    <label for="traffictickets" class="btn btn-info">Taffic Tickets(Last 5 years)<input type="checkbox" id="traffictickets" class="badgebox"><span class="badge">&check;</span></label>
+    					    <label for="vehiclelocation" class="btn btn-info">Vehicle Location<input type="checkbox" id="vehiclelocation" class="badgebox"><span class="badge">&check;</span></label>
+    					    <label for="primaryuse" class="btn btn-info">Primary Use<input type="checkbox" id="primaryuse" class="badgebox"><span class="badge">&check;</span></label>
+    					    <label for="olr" class="btn btn-info">Own/Lease/Finance<input type="checkbox" id="olr" class="badgebox"><span class="badge">&check;</span></label>
+    					    <label for="antitf" class="btn btn-info">Anti-Theft Device<input type="checkbox" id="antitf" class="badgebox"><span class="badge">&check;</span></label>
+    					    <label for="coveragetype" class="btn btn-info">Coverage Type<input type="checkbox" id="coveragetype" class="badgebox"><span class="badge">&check;</span></label>
+    					    <label for="homeownership" class="btn btn-info">Home Ownership<input type="checkbox" id="homeownership" class="badgebox"><span class="badge">&check;</span></label>
+        				 </div>
+    				</div>
+    			</div>
+    		</div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <button type="submit" class="btn form-control main-btn">Almost DONE</button>
+            </div>
+        </div>
+        </form>
+    </div>
+</div>
+<style>
+#previewcnt{
+    padding-top: 90px;
+}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body{font-family: 'Open Sans', sans-serif;}
+
+a, p, h2{text-decoration:none;}
+
+/* PANEL */
+.left-panel .panel-default{border-bottom-left-radius:7px; border-bottom-right-radius:7px; border-bottom:2px #DDD solid;}
+.left-panel .panel-default .panel-body {padding:0; margin:0;}
+.left-panel .panel-default .panel-body .col-md-12{margin:0; padding:0;}
+.left-panel .panel-default .panel-body .thumbnail{border:none; margin:0; padding:0; position:relative;}
+.left-panel .panel-default .panel-body .icerik-bilgi{margin:30px;}
+.icerik-bilgi .btn-primary{float:right; margin-bottom:30px;}
+.icerik-bilgi p{margin-bottom:30px; line-height:25px; font-size:16px;}
+/* Hiding the checkbox, but allowing it to be focused */
+.badgebox
+{
+    opacity: 0;
+}
+
+.badgebox + .badge
+{
+    /* Move the check mark away when unchecked */
+    text-indent: -999999px;
+    /* Makes the badge's width stay the same checked and unchecked */
+	width: 27px;
+}
+
+.badgebox:focus + .badge
+{
+    /* Set something to make the badge looks focused */
+    /* This really depends on the application, in my case it was: */
+    
+    /* Adding a light border */
+    box-shadow: inset 0px 0px 5px;
+    /* Taking the difference out of the padding */
+}
+
+.badgebox:checked + .badge
+{
+    /* Move the check mark back when checked */
+	text-indent: 0;
+}
+.contact-form{ margin-top:15px;}
+.contact-form .textarea{ min-height:220px; resize:none;}
+.form-control{ box-shadow:none; border-color:#eee; height:49px;}
+.form-control:focus{ box-shadow:none; border-color:#00b09c;}
+.form-control-feedback{ line-height:50px;}
+.main-btn{ background-color: #bc0cc9; border-color:#00b09c; color:white;}
+.form-control-feedback {
+line-height: 50px;
+top: 0px;
+}
+</style>
+</body>
+</html>

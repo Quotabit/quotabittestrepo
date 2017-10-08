@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Plan | Quotait</title>
+</head>
+<body>
+<% include partials/agentnavbar %>
+<div class="container" id="newplancnt">
+    <% if(user.agent_type == 'captive'){ %>
+        <form role="form" id="contact-form" class="contact-form" method="POST" action="/agent/createplan" style="padding-top: 200px;">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <select name="affiliates" id="" required="required" class="form-control">
+                        <option>Who are you working with</option>
+                        <option disabled>------------------</option>
+                        <option value="tfcentury">21st Century</option>
+                        <option value="hartford">Hartford</option>
+                        <option value="infinity">Infinity</option>
+                        <option value="jupiter">Jupiter</option>
+                        <option value="libertymutual">Liberty Mutual</option>
+                        <option value="mercury">Mercury</option>
+                        <option value="metlife">Met Life</option>
+                        <option value="nationgeneral">National General</option>
+                        <option value="nationwide">Nationwide</option>
+                        <option value="progressive">Progressive</option>
+                        <option value="safeauto">Safe Auto</option>
+                        <option value="selective">Selective</option>
+                        <option value="thegeneral">The General</option>
+                        <option value="titan">Titan</option>
+                        <option value="travelers">Travelers</option>
+                    </select>
+                </div>
+                <div class="col-md-1">
+                    <button type="submit" class="btn main-btn form-control">Next</button>
+                </div>
+            </div>
+        </form>
+    <% } else{ %>
+        <form role="form" id="contact-form" class="contact-form">
+            <div class="row">
+                <h4 class="text-center" style="color: #bc0cc9">You are working with</h4>
+                <div class="col-md-2 col-md-offset-1">
+                  	<div class="form-group">
+                        <label for="tfcentury" class="btn btn-info">21st Century<input type="checkbox" id="tfcentury" name="tfcentury" class="badgebox"><span class="badge">&check;</span></label>
+                    </div>
+                </div>
+                <div class="col-md-2 col-md-offset-1">
+                    <div class="form-group">
+                        <label for="hartford" class="btn btn-info">Hartford<input type="checkbox" id="hartford" name="hartford" class="badgebox"><span class="badge">&check;</span></label>
+                    </div>
+                </div>
+                <div class="col-md-2 col-md-offset-1">
+                    <div class="form-group">
+                        <label for="infinity" class="btn btn-info">Infinity<input type="checkbox" id="infinity" name="infinity" class="badgebox"><span class="badge">&check;</span></label>
+                    </div>
+                </div>
+                <div class="col-md-2 col-md-offset-1">
+                    <div class="form-group">
+                        <label for="jupiter" class="btn btn-info">Jupiter<input type="checkbox" id="jupiter" name="jupiter" class="badgebox"><span class="badge">&check;</span></label>
+                    </div>
+                </div>
+                <div class="col-md-2 col-md-offset-1">
+                    <div class="form-group">
+                        <label for="libertym" class="btn btn-info">Liberty Mutual<input type="checkbox" id="libertym" name="libertym" class="badgebox"><span class="badge">&check;</span></label>
+                    </div>
+                </div>
+                <div class="col-md-2 col-md-offset-1">
+                    <div class="form-group">
+                        <label for="mercury" class="btn btn-info">Mercury<input type="checkbox" id="mercury" name="mercury" class="badgebox"><span class="badge">&check;</span></label>
+                    </div>
+                </div>
+                <div class="col-md-2 col-md-offset-1">
+                    <div class="form-group">
+                        <label for="metlife" class="btn btn-info">Met Life<input type="checkbox" id="metlife" name="metlife" class="badgebox"><span class="badge">&check;</span></label>
+                    </div>
+                </div>
+                <div class="col-md-2 col-md-offset-1">
+                    <div class="form-group">
+                        <label for="nationalg" class="btn btn-info">National General<input type="checkbox" id="nationalg" name="nationalg" class="badgebox"><span class="badge">&check;</span></label>
+                    </div>
+                </div>
+                <div class="col-md-2 col-md-offset-1">
+                    <div class="form-group">
+                        <label for="nationwide" class="btn btn-info">Nationwide<input type="checkbox" id="nationwide" name="nationwide" class="badgebox"><span class="badge">&check;</span></label>
+                    </div>
+                </div>
+                <div class="col-md-2 col-md-offset-1">
+                    <div class="form-group">
+                        <label for="progressive" class="btn btn-info">Progressive<input type="checkbox" id="progressive" name="progressive" class="badgebox"><span class="badge">&check;</span></label>
+                    </div>
+                </div>
+                <div class="col-md-2 col-md-offset-1">
+                    <div class="form-group">
+                        <label for="safeauto" class="btn btn-info">Safe Auto<input type="checkbox" id="safeauto" name="safeauto" class="badgebox"><span class="badge">&check;</span></label>
+                    </div>
+                </div>
+                <div class="col-md-2 col-md-offset-1">
+                    <div class="form-group">
+                        <label for="selective" class="btn btn-info">Selective<input type="checkbox" id="selective" name="selective" class="badgebox"><span class="badge">&check;</span></label>
+                    </div>
+                </div>
+                <div class="col-md-2 col-md-offset-1">
+                    <div class="form-group">
+                        <label for="thegeneral" class="btn btn-info">The General<input type="checkbox" id="thegeneral" name="thegeneral" class="badgebox"><span class="badge">&check;</span></label>
+                    </div>
+                </div>
+                <div class="col-md-2 col-md-offset-1">
+                    <div class="form-group">
+                        <label for="titan" class="btn btn-info">Titan<input type="checkbox" id="titan" name="titan" class="badgebox"><span class="badge">&check;</span></label>
+                    </div>
+                </div>
+                <div class="col-md-2 col-md-offset-1">
+                    <div class="form-group">
+                        <label for="travelers" class="btn btn-info">Travelers<input type="checkbox" id="travelers" name="travelers" class="badgebox"><span class="badge">&check;</span></label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-md-offset-5">
+                    <button type="submit" class="btn main-btn form-control">Next</button>
+                </div>
+            </div>
+        </form>
+    <% } %>
+</div>
+<style>
+#newplancnt{
+    padding-top: 130px;
+}
+.contact-form{ margin-top:15px;}
+.contact-form .textarea{ min-height:220px; resize:none;}
+.form-control{ box-shadow:none; border-color:#eee; height:49px;}
+.form-control:focus{ box-shadow:none; border-color:#00b09c;}
+.form-control-feedback{ line-height:50px;}
+.main-btn{ background: #bc0cc9; border-color:#00b09c; color:#fff;}
+.form-control-feedback {
+line-height: 50px;
+top: 0px;
+}
+/* Hiding the checkbox, but allowing it to be focused */
+.badgebox
+{
+    opacity: 0;
+}
+
+.badgebox + .badge
+{
+    /* Move the check mark away when unchecked */
+    text-indent: -999999px;
+    /* Makes the badge's width stay the same checked and unchecked */
+	width: 27px;
+}
+
+.badgebox:focus + .badge
+{
+    /* Set something to make the badge looks focused */
+    /* This really depends on the application, in my case it was: */
+    
+    /* Adding a light border */
+    box-shadow: inset 0px 0px 5px;
+    /* Taking the difference out of the padding */
+}
+
+.badgebox:checked + .badge
+{
+    /* Move the check mark back when checked */
+	text-indent: 0;
+}
+</style>
+</body>
+</html>
